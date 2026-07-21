@@ -9,29 +9,37 @@
 body{
 margin:0;
 font-family:Arial,sans-serif;
-background:linear-gradient(180deg,#0b1020,#182848);
+background:#0b1020;
 color:white;
 text-align:center;
 }
 
-nav{
+header{
 background:#111;
 padding:20px;
 }
 
-nav a{
+header a{
 color:white;
 text-decoration:none;
 margin:15px;
 font-weight:bold;
 }
 
-nav a:hover{
-color:#2ec6ff;
+header a:hover{
+color:#4fc3ff;
 }
 
-.container{
-padding:80px 20px;
+main{
+padding:60px 20px;
+}
+
+.album{
+max-width:800px;
+margin:auto;
+background:#182848;
+padding:30px;
+border-radius:15px;
 }
 
 h1{
@@ -39,19 +47,23 @@ font-size:48px;
 }
 
 p{
-font-size:22px;
-color:#9fd3ff;
+font-size:20px;
+line-height:1.6;
 }
 
-.box{
-margin-top:40px;
-padding:30px;
-border:1px solid #2ec6ff;
-border-radius:15px;
-max-width:700px;
-margin-left:auto;
-margin-right:auto;
-background:rgba(255,255,255,0.05);
+.button{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#2196f3;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.button:hover{
+background:#0b7dda;
 }
 </style>
 
@@ -59,31 +71,34 @@ background:rgba(255,255,255,0.05);
 
 <body>
 
-<nav>
+<header>
 <a href="index.html">Hem</a>
 <a href="music.html">Musik</a>
 <a href="about.html">Om</a>
 <a href="gallery.html">Galleri</a>
 <a href="contact.html">Kontakt</a>
-</nav>
+</header>
 
-<div class="container">
+<main>
 
 <h1>🎵 Musik</h1>
 
-<p>Här kommer all musik från Everion att publiceras.</p>
+<div class="album">
 
-<div class="box">
+<h2>A Musical Journey Around the World (2026)</h2>
 
-<h2>A Musical Journey Around the World</h2>
+<p>
+Här kommer Everions musik att finnas samlad.
+När albumet släpps lägger vi in Spotify, Apple Music, YouTube Music och andra streamingtjänster här.
+</p>
 
-<p>Albumet släpps snart.</p>
-
-<p>När albumet är ute kommer Spotify, Apple Music, YouTube Music och övriga streamingtjänster att visas här.</p>
+<a class="button" href="index.html">
+Till startsidan
+</a>
 
 </div>
 
-</div>
+</main>
 
 </body>
 </html>
